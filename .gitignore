@@ -1,0 +1,8 @@
+# venv
+venv/
+
+# environment variables
+.env
+
+# python version
+.python-version

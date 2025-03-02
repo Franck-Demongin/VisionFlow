@@ -1,0 +1,4 @@
+ollama
+streamlit
+pydantic
+python-dotenv
