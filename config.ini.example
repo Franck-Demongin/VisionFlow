@@ -4,4 +4,5 @@
     comfyui_path = /path/to/your/ComfyUI
     python_path = /path/to/your/ComfyUI/venv/bin/python
     url = localhost:8188
-    params = --use-sage-attention
+    ; uncoment the next ligne to add some parameters to start ComfyUI server
+    ; params = --use-sage-attention

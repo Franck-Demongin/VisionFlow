@@ -81,7 +81,8 @@ The configuration file uses INI format with a `[comfyui]` section:
     comfyui_path = /path/to/your/ComfyUI
     python_path = /path/to/your/ComfyUI/venv/bin/python
     url = localhost:8188
-    params = --use-sage-attention
+    ; uncoment the next ligne to add some parameters to start ComfyUI server
+    ; params = --use-sage-attention
 ```
 
 Available options include:
@@ -90,6 +91,8 @@ Available options include:
 - `python_path`: path to Python executable in ComfyUI's virtual environment
 - `url`: ComfyUI server address and port. Default: localhost:8188
 - `params`: additional parameters for ComfyUI startup
+
+To add uncommented parameters, separate them with a space. eg. `params = --use-sage-attention --auto-launch`
 
 ## Usage
 
