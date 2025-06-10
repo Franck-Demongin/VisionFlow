@@ -1,4 +1,2 @@
-ollama
 streamlit
-pydantic
-python-dotenv
+websocket-client

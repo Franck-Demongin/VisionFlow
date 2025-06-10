@@ -1,0 +1,36 @@
+{
+  "name": "PixelAhuskay SDXL",
+  "description": "Workflow for PixelAhuskay SDXL",
+  "global": {
+    "seed": {
+      "type": "int",
+      "node": "3",
+      "input": "seed",
+      "default": 42
+    },
+    "width": {
+      "type": "int",
+      "node": "5",
+      "input": "width",
+      "default": 1024
+    },
+    "height": {
+      "type": "int",
+      "node": "5",
+      "input": "height",
+      "default": 1024
+    },
+    "batch_size": {
+      "type": "int",
+      "node": "5",
+      "input": "batch_size",
+      "default": 1
+    },
+    "clip": {
+      "type": "string",
+      "node": "6",
+      "input": "text",
+      "default": "{prompt}"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+; Copy this file to config.ini and modify the values according to your needs.
+
+[comfyui]
+    comfyui_path = /home/franck/Dvp/ComfyUI
+    python_path = /home/franck/Dvp/ComfyUI/venv/bin/python
+    url = localhost:8188
+    params = --use-sage-attention
