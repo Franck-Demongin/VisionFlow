@@ -1,7 +1,6 @@
-
 ![VisionFlow](https://github.com/user-attachments/assets/b2cb7e79-3a1c-4246-8425-bb46bd7d61c7)
 
-<img src="https://img.shields.io/badge/Python-3.12-blue" /> <img src="https://img.shields.io/badge/Streamlit-1.28-red" /> [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<img src="https://img.shields.io/badge/Python-3.12-blue" /> <img src="https://img.shields.io/badge/Streamlit-1.45-red" /> [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-green.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 # VisionFlow
 
@@ -47,7 +46,7 @@ Create a virtual environment to isolate dependencies:
 python -m venv .venv
 ```
 
-*python* should be replaced by the appropriate command according to your installation. On Linux, it could be *python3.12*, on Windows *python.exe*
+_python_ should be replaced by the appropriate command according to your installation. On Linux, it could be _python3.12_, on Windows _python.exe_
 
 Activate the virtual environment:
 
@@ -86,6 +85,7 @@ The configuration file uses INI format with a `[comfyui]` section:
 ```
 
 Available options include:
+
 - `comfyui_path`: path to your ComfyUI installation directory
 - `python_path`: path to Python executable in ComfyUI's virtual environment
 - `url`: ComfyUI server address and port. Default: localhost:8188
@@ -123,9 +123,11 @@ The application will be accessible at `http://localhost:8501`
 ## Supported Workflows
 
 VisionFlow currently supports the following ComfyUI workflows:
+
 - **Text-to-Image**: Generate images from text descriptions
 
-*Coming soon:*
+_Coming soon:_
+
 - Inpainting and outpainting
 - Image-to-image transformation
 
@@ -143,11 +145,12 @@ VisionFlow allows you to integrate your own ComfyUI workflows. Here's how to add
 
 1. Export your workflow: In ComfyUI, go to Workflow > Export (API) to export your workflow as JSON
 2. Copy workflow file: Place the exported JSON file in the workflows/ directory of your VisionFlow installation
-3. Create configuration file: Create a configuration file with the same name but with _config suffix
+3. Create configuration file: Create a configuration file with the same name but with \_config suffix
 
 **Example:** workflowSDXL.json → workflowSDXL_config.json
 
 ### Configuration File Format
+
 The configuration file must contain general information about the workflow and parameter mappings:
 
 ```json
@@ -237,6 +240,7 @@ This allows VisionFlow to automatically inject the user's text prompt into the a
 ### ComfyUI Connection Issues
 
 Check that:
+
 - ComfyUI is started and accessible
 - Connection parameters are correct in configuration
 - No firewall is blocking the connection
@@ -250,6 +254,7 @@ Check that:
 ## Contributing
 
 Contributions are welcome! Feel free to:
+
 - Report bugs
 - Suggest new features
 - Submit pull requests
@@ -263,6 +268,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ### v0.1.0 - 2025-06-10
 
 **Added:**
+
 - Intuitive Streamlit interface
 - ComfyUI integration
 - AI image generation
