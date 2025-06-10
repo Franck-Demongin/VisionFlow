@@ -1,6 +1,6 @@
 {
-  "name": "PixelAhuskay SDXL",
-  "description": "Workflow for PixelAhuskay SDXL",
+  "name": "SDXL 1.0",
+  "description": "Workflow for SDXL 1.0",
   "global": {
     "seed": {
       "type": "int",
