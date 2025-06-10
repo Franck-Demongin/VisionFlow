@@ -12,6 +12,7 @@ from PIL import Image
 
 from modules.comfyui import comfyui, is_server_running, start_comfyui_server
 from modules.comfyui import interrupt
+from modules.config import VERSION
 
 workflow_base_path = "./workflow/"
 
@@ -236,6 +237,9 @@ if server_running:
             if st.button(":material/cancel: CANCEL", key="button_interrupt", type="primary", use_container_width=True):
                 interrupt()
 
+        st.write("---")
+        st.write(f"version {VERSION}")
+
 
     st.title(":material/palette: VisionFlow")
     st.subheader("The easy way to generate images with ComfyUI", divider=True)
@@ -255,9 +259,6 @@ if server_running:
         st.session_state.running = True
 
         st.session_state.reload_prompt = None
-
-        # if prompt is None:
-        #     st.stop()
         
         w, h = st.session_state.get("size", "1024x1024").split("x")
         st.session_state.last_seed = st.session_state.get("seed") if st.session_state.get("seed") != -1 else random.randint(0, 2**32 - 1)

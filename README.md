@@ -4,6 +4,8 @@
 
 # VisionFlow
 
+<img src="https://img.shields.io/badge/Version-0.1.0-blue" />
+
 VisionFlow is a Streamlit-powered web application that allows you to generate images easily using the power of ComfyUI workflows. Simplify AI image creation with an intuitive and accessible interface.
 
 ![Capture d’écran de 2025-06-10 11-18-34](https://github.com/user-attachments/assets/d571fe14-1c8d-4c8b-81c4-0858f5d95459)
